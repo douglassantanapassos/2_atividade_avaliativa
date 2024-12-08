@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
-  background-color: #000000;
+  background-color: #141414;
 }
 
 .header {
@@ -12,7 +12,7 @@ body {
   height: 5vh;
   width: 100vw;
   padding: 10px 4%;
-  background-color: #000000;
+  background-color: #000000; 
   position: fixed;
   font-size: 2vh;
 }
@@ -44,13 +44,18 @@ ul {
 
 .header-img img {
   width: 100%;
-  height: 100%;
+  height: 95vh;
 }
 .gallery_container h2 {
   color: #ffffff;
 }
 .gallery_container {
-  margin-left: 2vw;
+  margin-left: 5vw;
+ 
+}
+.gallery_items a img:hover {
+  transform: scale(1.5); 
+  transition: 0.5s; 
 }
 
 .gallery_items a img {
@@ -58,6 +63,7 @@ ul {
   height: 19vh;
   margin: 1px;
   border-radius: 3px;
+  
 }
 footer {
   padding-top: 10vh;
@@ -90,4 +96,56 @@ footer {
 p {
   margin-left: 6vw;
   font-size: 1.5vh;
+}
+
+
+/*Aqui começa o css dos botões*/
+
+/* Botões */
+.conteiner_top{
+  display: flex;
+  
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.button.watch {
+  background-color: white;
+  color: black;
+}
+
+.button.info {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+/* Gera*/
+
+.filme {
+  display: flex; 
+  align-items: center; 
+}
+
+.filme img {
+  width: 129px;
+  border-radius: 5px;
+  
+}
+.filme a img:hover {
+  transform: scale(1.5); 
+  transition: 0.5s; 
+}
+.numero {
+  font-size: 15rem; 
+  font-weight: bold; 
+  color: rgba(255, 255, 255, 0.1); 
 }
