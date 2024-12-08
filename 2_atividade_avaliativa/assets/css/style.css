@@ -1,40 +1,39 @@
 body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    background-color: #000000;
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  background-color: #000000;
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    height: 5vh;
-    width: 100vw;
-    padding: 10px;
-    background-color: #000000;
-    position: fixed;
-   align-items: center;
-  
+  display: flex;
+  flex-direction: row;
+  height: 5vh;
+  width: 100vw;
+  padding: 10px;
+  background-color: #000000;
+  position: fixed;
+  align-items: center;
 }
-.nav{
-    margin-right: 50em;
+.nav {
+  margin-right: 50em;
 }
 .nav-img a img {
-    width: 6vw;
-    height: 4vh;
-    margin-left: 1.5vw;
+  width: 6vw;
+  height: 4vh;
+  margin-left: 1.5vw;
 }
-ul{
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
 }
-.nav ul li{
-    margin-right: 0.5vw;
-
+.nav ul li {
 }
-.nav ul li a{
-    text-decoration: none;
+.nav ul li a {
+  text-decoration: none;
+  margin-right: 1vw;
+  color: #ffffff;
 }
 
 .nav1 a img {
@@ -42,31 +41,52 @@ ul{
   height: 1vh;
 }
 
-.header-img img{
+.header-img img {
   width: 100%;
   height: 100%;
-  
 }
-.gallery_container h2{
-    color: #ffffff;
+.gallery_container h2 {
+  color: #ffffff;
 }
-.gallery_container  {
-    margin-left: 2vw; 
+.gallery_container {
+  margin-left: 2vw;
 }
 
 .gallery_items a img {
-    width: 15vw; 
-    height: 19vh;
-    margin: 1px;
-    border-radius: 3px;
-} 
-
-.footer_global{
-    display: flex;
-       
+  width: 15vw;
+  height: 19vh;
+  margin: 1px;
+  border-radius: 3px;
+}
+footer {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  color: #ffffff;
+}
+.footer_global {
+  display: flex;
+  font-size: 1.5vh;
 }
 
+.footer-links {
+  padding: 2px;
+  margin-left: 6vw;
+}
 .footer-links a {
-    display: flex;
-    text-decoration: none;
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+}
+.rede-social {
+  margin-left: 6vw;
+}
+.rede-social a img {
+  width: 1vw;
+  height: 2vh;
+  padding-right: 0.5vw;
+}
+
+p {
+  margin-left: 6vw;
+  font-size: 1.5vh;
 }
