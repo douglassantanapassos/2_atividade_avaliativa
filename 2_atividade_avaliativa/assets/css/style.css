@@ -7,16 +7,17 @@ body {
 
 .header {
   display: flex;
+  align-items: center;
   flex-direction: row;
   height: 5vh;
   width: 100vw;
-  padding: 10px;
+  padding: 10px 4%;
   background-color: #000000;
   position: fixed;
-  align-items: center;
+  font-size: 2vh;
 }
 .nav {
-  margin-right: 50em;
+  margin-right: 45%;
 }
 .nav-img a img {
   width: 6vw;
@@ -27,9 +28,9 @@ ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  white-space: nowrap;
 }
-.nav ul li {
-}
+
 .nav ul li a {
   text-decoration: none;
   margin-right: 1vw;
@@ -37,8 +38,8 @@ ul {
 }
 
 .nav1 a img {
-  width: 1vw;
-  height: 1vh;
+  width: 1.5vw;
+  height: 1.8vh;
 }
 
 .header-img img {
