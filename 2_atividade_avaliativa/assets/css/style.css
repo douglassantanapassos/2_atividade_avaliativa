@@ -67,11 +67,12 @@ ul {
 }
 
 .gallery_items a img {
-  width: 15vw;
-  height: 19vh;
   margin: 1px;
   border-radius: 3px;
-  
+  max-width:200px;
+  max-height:150px;
+  width: auto;
+  height: auto;
 }
 footer {
   padding-top: 10vh;
@@ -126,12 +127,12 @@ p {
   font-weight: bold;
 }
 
-.button.watch {
+#watch {
   background-color: white;
   color: black;
 }
 
-.button.info {
+#info {
   background-color: rgba(255, 255, 255, 0.3);
   color: white;
 }
@@ -155,5 +156,39 @@ p {
 .numero {
   font-size: 15rem; 
   font-weight: bold; 
-  color: rgba(255, 255, 255, 0.1); }
- 
+  color: rgba(255, 255, 255, 0.1); 
+  
+}
+
+
+  @media screen and (max-width: 1080px){
+    .header2 .header-img img{
+      height: 70vh;
+     }  
+    .buttons{
+    
+      top: 60vh;
+    
+    }
+    
+    .button{
+      padding: 5px 10px;
+      font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 580px){
+ .header2 .header-img img{
+  height: 50vh;
+ }  
+.buttons{
+  /* position: static; */
+  top: 40vh;
+
+}
+
+.button{
+  padding: 5px 10px;
+  font-size: 10px;
+}
+}
