@@ -5,10 +5,10 @@ body {
   background-color: #141414;
 }
 
-.buttons{
-  position:absolute;
-  top:80%;
-  left:8%;
+.buttons {
+  position: absolute;
+  top: 80%;
+  left: 8%;
 }
 .header {
   display: flex;
@@ -17,10 +17,10 @@ body {
   height: 5vh;
   width: 100vw;
   padding: 10px 4%;
-  background-color: #141414; 
+  background-color: #141414;
   position: fixed;
   font-size: 2vh;
-  z-index:1;
+  z-index: 1;
 }
 .nav {
   margin-right: 45%;
@@ -58,19 +58,25 @@ ul {
 
 .gallery_container {
   margin-left: 5vw;
-  white-space: nowrap 
+  margin-right: 5vw;
+  white-space: nowrap;
 }
 
+.gallery_items {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
 .gallery_items a img:hover {
-  transform: scale(1.5); 
-  transition: 0.5s; 
+  transform: scale(1.5);
+  transition: 0.5s;
 }
 
 .gallery_items a img {
   margin: 1px;
+  margin-bottom: 40px;
   border-radius: 3px;
-  max-width:200px;
-  max-height:150px;
+  max-width: 300px;
+  max-height: 180px;
   width: auto;
   height: auto;
 }
@@ -107,14 +113,10 @@ p {
   font-size: 1.5vh;
 }
 
-
 /*Aqui começa o css dos botões*/
 
 /* Botões */
-.conteiner_top{
-  display: flex;
-  height: 20vh;
-}
+
 .buttons {
   display: flex;
   gap: 10px;
@@ -140,55 +142,64 @@ p {
 /* Gera*/
 
 .filme {
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
 }
 
 .filme img {
   width: 129px;
   border-radius: 5px;
-  
 }
 .filme a img:hover {
-  transform: scale(1.5); 
-  transition: 0.5s; 
+  transform: scale(1.5);
+  transition: 0.5s;
 }
 .numero {
-  font-size: 15rem; 
-  font-weight: bold; 
-  color: rgba(255, 255, 255, 0.1); 
-  
+  font-size: 15rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.1);
+}
+.conteiner_top {
+  display: flex;
+  height: 35vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
-
-  @media screen and (max-width: 1080px){
-    .header2 .header-img img{
-      height: 70vh;
-     }  
-    .buttons{
-    
-      top: 60vh;
-    
-    }
-    
-    .button{
-      padding: 5px 10px;
-      font-size: 10px;
-    }
+@media screen and (max-width: 1200px) {
+  .conteiner_top {
+    height: 50vh;
+  }
 }
 
-@media screen and (max-width: 580px){
- .header2 .header-img img{
-  height: 50vh;
- }  
-.buttons{
-  /* position: static; */
-  top: 40vh;
+@media screen and (max-width: 1080px) {
+  .header2 .header-img img {
+    height: 70vh;
+  }
+  .buttons {
+    top: 60vh;
+  }
 
+  .button {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
 }
 
-.button{
-  padding: 5px 10px;
-  font-size: 10px;
-}
+@media screen and (max-width: 580px) {
+  .header2 .header-img img {
+    height: 50vh;
+  }
+  .buttons {
+    top: 40vh;
+  }
+  .gallery_items a img {
+    width: 130px;
+    height: 100px;
+  }
+
+  .button {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
 }
