@@ -62,10 +62,11 @@ ul {
   white-space: nowrap;
 }
 
-.gallery_items {
+/* .gallery_items {
   overflow-x: scroll;
   overflow-y: hidden;
-}
+} */
+ 
 .gallery_items a img:hover {
   transform: scale(1.5);
   transition: 0.5s;
@@ -202,4 +203,20 @@ p {
     padding: 5px 10px;
     font-size: 10px;
   }
+}
+
+.scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background-color: #141414;
+}
+.scroll::-webkit-scrollbar {
+  height: 4px;
+  background: #F4F4F4;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background: #353333;
 }
