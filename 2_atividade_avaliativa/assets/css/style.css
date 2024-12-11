@@ -66,14 +66,15 @@ ul {
   overflow-x: scroll;
   overflow-y: hidden;
 } */
- 
+
 .gallery_items a img:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition: 0.5s;
 }
 
 .gallery_items a img {
   margin: 1px;
+  margin-top: 17px;
   margin-bottom: 40px;
   border-radius: 3px;
   max-width: 300px;
@@ -114,10 +115,6 @@ p {
   font-size: 1.5vh;
 }
 
-/*Aqui começa o css dos botões*/
-
-/* Botões */
-
 .buttons {
   display: flex;
   gap: 10px;
@@ -140,8 +137,6 @@ p {
   color: white;
 }
 
-/* Gera*/
-
 .filme {
   display: flex;
   align-items: center;
@@ -152,7 +147,7 @@ p {
   border-radius: 5px;
 }
 .filme a img:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition: 0.5s;
 }
 .numero {
@@ -162,6 +157,7 @@ p {
 }
 .conteiner_top {
   display: flex;
+
   height: 35vh;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -215,8 +211,23 @@ p {
 }
 .scroll::-webkit-scrollbar {
   height: 4px;
-  background: #F4F4F4;
+  /* background: #f4f4f4; */
 }
 .scroll::-webkit-scrollbar-thumb {
+  background: #353333;
+}
+.conteiner_top {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.conteiner_top::-webkit-scrollbar-track {
+  background-color: #141414;
+}
+.conteiner_top::-webkit-scrollbar {
+  height: 4px;
+  background: #f4f4f4;
+}
+.conteiner_top::-webkit-scrollbar-thumb {
   background: #353333;
 }
